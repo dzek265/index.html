@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Informasi Tentang Saya</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #000;
+      color: white;
+      text-align: center;
+      padding: 30px;
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      position: relative;
+    }
+
+    img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    table {
+      margin: 30px auto;
+      background-color: rgba(255, 255, 255, 0.1);
+      border-collapse: collapse;
+      width: 80%;
+      max-width: 500px;
+    }
+
+    th, td {
+      padding: 15px;
+      border: 1px solid white;
+      font-size: 1.1em;
+    }
+
+    th {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    a {
+      color: #00ffcc;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="judul">Web Informasi Dzex</h1>
+  <img src="dzextes.jpg" alt="Foto Dzex" id="foto">
+
+  <!-- Tabel Utama -->
+  <table>
+    <tr>
+      <th>Informasi</th>
+      <th>Detail</th>
+    </tr>
+    <tr>
+      <td>Nama</td>
+      <td>Dzex</td>
+    </tr>
+    <tr>
+      <td>Hobi</td>
+      <td>DDoS, Tukang Bug☠️, Membuat Web, Attacker☠️, Coding</td>
+    </tr>
+    <tr>
+      <td>makanan favorit</td>
+      <td>ayam geprek 💐</td>
+    </tr>
+  </table>
+
+  <!-- Tabel Tambahan -->
+  <table>
+    <tr>
+      <th>Kemampuan</th>
+      <th>Tingkat</th>
+    </tr>
+    <tr>
+      <td>HTML & CSS</td>
+      <td>ez wok😎</td>
+    </tr>
+    <tr>
+      <td>Bug Hunting</td>
+      <td>makanan sehari hari😹</td>
+    </tr>
+    <tr>
+      <td>DDoS Tools</td>
+      <td>sambil tidur woi🥶</td>
+    </tr>
+    <tr>
+      <td>jumlah kacung dzex</td>
+      <td>1000++++++++++++++++🤭</td>
+    </tr>
+  </table>
+
+  <!-- Tabel Kontak -->
+  <table>
+    <tr>
+      <th>Kontak</th>
+      <th>Detail</th>
+    </tr>
+    <tr>
+      <td>WhatsApp</td>
+      <td><a href="https://wa.me/6285720154585" target="_blank">+62 857-2015-4585</a></td>
+    </tr>
+    <tr>
+      <td>TikTok</td>
+      <td><a href="https://www.tiktok.com/@dzex_tiktok" target="_blank">@dzexd2</a></td>
+    </tr>
+  </table>
+
+  <!-- JavaScript Animasi -->
+  <script>
+    // Animasi judul bergerak kiri-kanan
+    const judul = document.getElementById("judul");
+    let arah = 1;
+    let posisiX = 0;
+
+    setInterval(() => {
+      if (posisiX > 30 || posisiX < -30) arah *= -1;
+      posisiX += arah;
+      judul.style.transform = `translateX(${posisiX}px)`;
+    }, 30);
+
+    // Animasi gambar bergerak naik-turun
+    const foto = document.getElementById("foto");
+    let arahY = 1;
+    let posisiY = 0;
+
+    setInterval(() => {
+      if (posisiY > 10 || posisiY < -10) arahY *= -1;
+      posisiY += arahY;
+      foto.style.transform = `translateY(${posisiY}px)`;
+    }, 60);
+  </script>
+</body>
+  </html>
